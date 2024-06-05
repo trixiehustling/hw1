@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 1s, color 1s;
+}
+
+#logoContainer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#logoContainer img {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 150px;
+    transition: box-shadow 1s;
+    cursor: pointer;
+}
+
+.content {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    text-align: left;
+    max-width: 800px;
+    transition: background-color 1s, color 1s, box-shadow 1s;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#imageContainer img {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-width: 100%;
+    transition: box-shadow 1s;
+}
+
+@media only screen and (max-width: 768px) {
+    .content {
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #logoContainer img {
+        max-width: 100px;
+    }
+
+    .content {
+        padding: 15px;
+    }
+}
